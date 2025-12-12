@@ -30,12 +30,12 @@
 
 /* Navbar collapsed styles */
 .navbar-toggler {
-    color: #fff;
+    color: #242424;
     border-color: #fff;
-    background-color: #863ee3;
+    background-color: #74cf4d;
     border-radius: 4px;
     border: 1px solid;
-    fill: #fff;
+    fill: #242424;
     font-size: 16px;
     position: relative;
     margin-right: 10px;
@@ -43,7 +43,7 @@
 
 .navbar-toggler:hover,
 .navbar-toggler:focus {
-    background-color: #74cf4d;
+    background-color: #9ace84;
     color: #242424;
     fill: #242424;
     border-color: #fff;
