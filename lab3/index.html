@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+            <title></title>
+
+        <!--custom stylesheet-->
+        <link rel="stylesheet" href="css/style.css">
+        <!--external stylesheets-->
+        <link rel="stylesheet" href="lib/scrollmap.css">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Elms+Sans:ital,wght@0,100..900;1,100..900&family=Lexend+Giga:wght@100..900&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+        <div class="content">
+             <!--title block, background image is title image-->
+            <div class="row" style="background-image:url(assets/carpet_png.png); background-size:cover;">
+                <div class="center title">
+                    <!--title text-->
+                    <h1>Portland International Tileset</h1>
+                    <!--subtitle or author-->
+                    <p class="author">James Clunes</p>
+                </div>
+            </div>
+            <!--text content block-->
+            <div class="row">
+                <div class="left">
+                    <p class="vert-center">This is a love letter to a five-year-old me, excited to sit next to the window, not in his
+                        mother's lap for the first time.
+                        Little did he know, when you make your own maps, every seat is the window seat.
+                    </p>
+
+                </div>
+                <div class="right">
+
+                    <img class="fit" src="assets/night_flight_3.jpeg">
+                </div>
+                
+            </div>
+            <!--side by side text and image-->
+            <div class="row">
+                <div class="left">
+                    <img class="fit" src="assets/pdx_moodboard.png">
+                </div>
+                <div class="right">
+                    <p class="vert-center">The map takes cues from the frontage, terminals, and design aesthetic 
+                            of Portland International. Dark blues and greens accented by light wood create 
+                            a tie to the Pacific Northwest's natural beauty, while aspects of the built environment
+                            are represented the grays and yellows of the tarmac and runways.
+                    </p>
+                    
+                </div>
+            </div>
+
+            <!--background images with text scrolling over them (sidecar)-->
+            <div class="scroll-container">    
+                <!--background images-->
+                <div class="background-item">
+                    <img src="assets/zoom-1.png" data-slide="1" class="fill vert-center">
+                    <img src="assets/cascade.png" data-slide="2" class="fill hidden">
+                    <img src="assets/pnw-tilt-best.png" data-slide="3" class="fill hidden">
+                    <img src="assets/phoenix-2.png" data-slide="4" class="fill hidden">
+                </div>
+                <!--foreground text blocks-->
+                <div class="foreground-item">
+                    <div class="row">
+                        <div class="center background-transparent rounded">
+                            <p class="no-margin">Although he was carried through most of the security lines, he remembers the green carpet
+                                with blue and and maroon hatching.</p>
+                                <p></p>
+                                <p class="no-margin">At his gate, he looked across the gray tarmac crisscrossed by yellow centerlines and bright yellow taxiway signs.
+                                    As a jet started its takeoff roll, his father made engine sounds.
+                                </p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="center background-transparent rounded">
+                            <p class="no-margin">After takeoff, the plane turned gently, and his father pointed out each mountain that passed by his window.</p>
+                            <p></p>
+                            <p class="no-margin">Places once far away became white names on a blue arrival board, soon to be visited!</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="center background-transparent rounded">
+                            <p class="no-margin">Soon they were high above the earth, and silky clouds sat snuggled up in the sleepy valleys below.</p>
+                            <p></p>
+                            <p class="no-margin">Roads stretched into the coming dawn like necklaces of gold on a jade velvet bed.</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="center background-transparent rounded">
+                            <p class="no-margin">As they descended into Phoenix, the city became a grid of concrete squares.</p>
+                            <p></p>
+                            <p class="no-margin">He saw the plane's shadow flitting over rooftops and parking lots below.
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+
+            <div class="row">
+                <div class="center">
+                    <p>Since then, that boy has flown to many airports!</p>
+                </div>
+                <div class="center-wide">
+                    <!-- Slideshow container -->
+                    <div class="slideshow-container">
+                        <!--slideshow content goes here-->
+                        <div class="slide">
+                            <img src="assets/boise.png">
+                            <p class="caption">He's visited relatives in Boise...</p>
+                        </div>
+                        <div class="slide">
+                            <img src="assets/palm-springs.png">
+                            <p class="caption">Seen his Aunt and Uncle in Palm Springs...</p>
+                        </div>
+                        <div class="slide">
+                            <img src="assets/cozumel.png">
+                            <p class="caption">Event went on a SCUBA diving trip in Cozumel...</p>
+                        </div>
+                        <div class="slide">
+                            <img src="assets/corvallis.png">
+                            <p class="caption">But his favorite airport is the little Corvallis airport, where that boy has logged over 300 landings.</p>
+                        </div>
+                        <!-- Next and previous buttons -->
+                        <a class="prev">&#10094;</a>
+                        <a class="next">&#10095;</a>
+
+                        <!-- The dots/circles -->
+                        <div class="slideshow-dots">
+                            <span class="dot" id="1"></span>
+                            <span class="dot" id="2"></span>
+                            <span class="dot" id="3"></span>
+                            <span class="dot" id="4"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="center-wide">
+                    <p>Where will your flight plan take you?</p>
+                    <p>(zoom out to take off!)</p>
+                    <iframe class="fit" src=https://api.mapbox.com/styles/v1/alpine-nine/cmhl2drab002i01qf5ccy7qi7.html?title=view&access_token=pk.eyJ1IjoiYWxwaW5lLW5pbmUiLCJhIjoiY21obDJhenpkMXZyYzJqcHZuN2l5Y2piNSJ9.QruZNV4NkWeoiqp1cyK5MQ&zoomwheel=true&fresh=true#12.05/45.584/-122.60338/88/55>
+                    </iframe>
+                </div> 
+            </div>
+
+            <!--credits-->
+            <div class="row no-margin">
+                <div class="center">
+                    <div class="credits">
+                        <p><b>Credits:</b></p>
+                        <p>"Night Flight" photo by cR_Spitfire via reddit.com</p>
+                        <p>Map created with Mapbox Studio</p>
+                        <p>Data from openstreetmap</p>
+                        <p>Memories made possible through love from my mom and dad <3 </p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <!--external scripts-->
+        <script type="text/javascript" src="lib/scrollmap.js"></script>
+    </body>
+</html>
