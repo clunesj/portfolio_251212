@@ -62,9 +62,62 @@ body{
 .title h1{
     font-family:'Elms Sans', sans-serif;
     letter-spacing: 10px;
+    text-shadow: 2px 2px 1px rgba(0, 0, 0, .8);
     font-weight:800;
-    color:rgb(8, 31, 1);
-    text-shadow: 2px 2px 1px black;
+    color:rgb(179, 179, 179);
+    /* background: radial-gradient(circle, rgb(176, 176, 176), rgb(55, 54, 54)); */
+    /* background-clip: text; */
+    /* color: transparent */
+}
+
+.navbar {
+    background-color: #333a30;
+    border-radius: 0;
+}
+
+/* Navbar title */
+.navbar-default .navbar-brand {
+    color: white;
+    font-size: px;
+    font-weight: bold;
+}
+
+/* Navbar hover effects */
+.navbar-default .navbar-brand:hover,
+.navbar-default .navbar-brand:focus,
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+    color: #9ace84;
+    text-decoration: none;
+}
+
+/* Navbar links */
+.navbar-default .navbar-nav > li > a {
+    color: #fff;
+    font-size: 16px;
+    padding: 10px;
+}
+
+/* Navbar collapsed styles */
+.navbar-toggler {
+    color: #242424;
+    border-color: #fff;
+    background-color: #74cf4d;
+    border-radius: 4px;
+    border: 1px solid;
+    fill: #242424;
+    font-size: 16px;
+    position: relative;
+    margin-right: 10px;
+}
+
+.navbar-toggler:hover,
+.navbar-toggler:focus {
+    background-color: #9ace84;
+    color: #242424;
+    fill: #242424;
+    border-color: #fff;
+
 }
 
 /*bottom margin styles*/
