@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "../../james-clunes-portfolio"
+		},
+		{
+			"path": ".."
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "portfolio_251212"
+	}
+}
